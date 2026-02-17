@@ -7,7 +7,7 @@ import rateLimit from 'express-rate-limit';
 
 import { connectDB } from './configs/db.js';
 
-import authRoutes from './src/User/auth.routes.js';
+import userRoutes from './src/User/user.routes.js';
 import postRoutes from './src/Post/post.routes.js';
 import commentRoutes from './src/Comment/comment.routes.js';
 
@@ -27,7 +27,7 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 
-app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
 app.use('/api/posts', postRoutes);
 app.use('/api/comments', commentRoutes);
 
