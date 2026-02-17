@@ -1,0 +1,15 @@
+# Node.js
+/node_modules/
+
+# Archivos de configuración del entorno
+.env
+
+# Archivos de logs
+*.log
+
+# Archivos de build
+/dist
+/build
+
+# Archivos temporales
+*.tmp
