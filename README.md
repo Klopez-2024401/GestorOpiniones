@@ -121,3 +121,5 @@ http://localhost:3006/api/comments/:id
 
 Headers:
 Poner tu token despues eleminar
+
+El token es obligatorio
